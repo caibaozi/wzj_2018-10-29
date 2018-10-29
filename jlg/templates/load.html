@@ -1,0 +1,161 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>手机登录-嘉丽购</title>
+		<link rel="stylesheet" type="text/css" href='{% static "css/footer.css" %}' />
+		<link rel="stylesheet" type="text/css" href={% static "css/load.css" %} />
+		<link rel="stylesheet" type="text/css" href='{% static "css/jquery.idcode.css" %}' />
+		<script src='{% static "js/jquery-1.12.0.js" %}' type="text/javascript" charset="utf-8"></script>
+		<script src='{% static "js/load.js" %}' type="text/javascript" charset="utf-8"></script>
+		<script src='{% static "js/jquery.cookie.js" %}' type="text/javascript" charset="utf-8"></script>
+		<script src='{% static "js/jquery.idcode.js" %}' type="text/javascript" charset="utf-8"></script>
+
+
+	</head>
+
+<body>
+	<div class="bigbox">
+			<div id="top">
+				<div id="t_top">
+					<img class="_load_img fl" src="{% static 'img/nav/nav1.jpg' %}">
+					<div class="load fl">用户登录</div>
+					<div class="vip fl">
+						<a href="#">嘉丽购电视会员激活入口</a>
+					</div>
+				</div>
+				<div id="t_bottom">
+					<img class="fl" src="{% static 'img/nav/login-bg.jpg' %}">
+					<div class="_loading fl">
+						<div class="user">
+							<p class="first_p">嘉丽购会员登录
+								<a href="#" class="free">免费注册</a>
+							</p>
+							<p class="text">
+								<input id="username" placeholder="用户名/邮箱/电话号码" type="text">
+							</p>
+							<p class="text">
+								<input id="pwd" placeholder="密码" type="text">
+							</p>
+							<p class="text">
+								<input id="Txtidcode" class="txtVerification fl" placeholder="验证码" type="text">
+								<span id="idcode"><div id="ehong-code" class="ehong-idcode-val ehong-idcode-val4" href="#" onblur="return false" onfocus="return false" oncontextmenu="return false" onclick="$.idcode.setCode()"><font color="#BF0C43">L</font><font color="#BF0C43">R</font><font color="#73C841">o</font><font color="#BF0C43">J</font></div><span id="ehong-code-tip-ck" class="ehong-code-val-tip" onclick="$.idcode.setCode()"></span></span>
+								<!--<input type="text"  id="istrue" placeholder="验证码"/>
+							<input type="text" id="idcode" />-->
+							</p>
+							<p style="margin-bottom: 13px;">
+								<input class="auto" type="checkbox">自动登录
+								<a href="#" class="finding">找回密码</a>
+							</p>
+							<p class="text">
+								<input value="登录" id="_load" type="button">
+							</p>
+							<p class="last_p">亲，没有帐号，你可以选择以下快捷登录方式！</p>
+							<div class="_div1"></div>
+							<div class="_div2"></div>
+							<div class="_div3"></div>
+						</div>
+
+						<div class="qq">
+							<img src="{% static 'img/banner/qq.jpg' %}" class="fl _qq">
+							<a href="#" class="fl">qq登录</a>
+							<div class="weibo fl">
+								<img src="{% static 'img/banner/other_way.jpg' %}">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--尾部-->
+			<div id="footer">
+				<div class="f_top">
+					<div class="zheng fl">
+						<img src="{% static 'img/footer/top1.jpg' %}">
+						<h3>正品保证</h3>
+						<h5>正品行货 开具发票</h5>
+					</div>
+					<div class="zheng fl">
+						<img src="{% static 'img/footer/top2.jpg' %}">
+						<h3>快捷配送</h3>
+						<h5>严格包装 无损签收</h5>
+					</div>
+					<div class="zheng fl">
+						<img src="{% static 'img/footer/top3.jpg' %}">
+						<h3>便捷支付</h3>
+						<h5>在线支付 货到付款</h5>
+					</div>
+				</div>
+				<div class="f_middle">
+					<img src="{% static 'img/footer/middle1.jpg' %}">
+					<div class="list">
+						<div class="lists fl">
+							<b>购物指南</b>
+							<a href="#">新用户注册/激活</a>
+							<a href="#">如何订购</a>
+							<a href="#">常见问题</a>
+						</div>
+						<div class="lists fl">
+							<b>会员中心</b>
+							<a href="#">会员权益</a>
+							<a href="#">美丽积分</a>
+							<a href="#">订单查询</a>
+							<a href="#">找回密码</a>
+						</div>
+						<div class="lists fl">
+							<b>配送服务</b>
+							<a href="#">物流跟踪</a>
+							<a href="#">免运费政策</a>
+						</div>
+						<div class="lists fl">
+							<b>支付说明</b>
+
+							<a href="#">货到付款</a>
+							<a href="#">在线支付</a>
+						</div>
+						<div class="lists fl">
+							<b>售后服务</b>
+							<a href="#">退换货政策</a>
+							<a href="#">退换货流程</a>
+							<a href="#">安全与保密</a>
+						</div>
+					</div>
+					<div class="web">
+						<img src="{% static 'img/footer/middle2.jpg' %}" class="fl">
+						<div class="online fl">
+							<b>400-630-0077</b>
+							<h5>网站专线</h5>
+						</div>
+					</div>
+				</div>
+				<div class="f_bottom">
+					<p>
+						<a href="#">商城首页</a>
+						<a href="#">官网首页</a>
+						<a href="#">供应商登录</a>
+						<a href="#">供货联系</a>
+						<a href="#">收藏我们</a>
+						<a href="#">公司简介</a>
+						<a href="#">媒体报道</a>
+						<a href="#">嘉丽购招聘</a>
+						<a href="#">官方微博</a>
+						<a href="#" style="border: none;">合作网站：范游网</a>
+					</p><br>
+					<p class="copyright">
+						嘉丽购物有限责任公司 Copyright 2010-2014 jialigou All Rights Reserved
+					</p>
+					<p style="margin-top: 5px;">国家广电总局批号：广局[2010] 278号湘ICP备10203162号-3</p>
+					<img src="{% static 'img/footer/bt5.gif' %}">
+					<div class="security">
+						<img src="{% static 'img/footer/bt1.jpg' %}" class="fl">
+						<img src="{% static 'img/footer/bt2.jpg' %}" class="fl">
+						<img src="{% static 'img/footer/bt3.gif' %}" class="fl">
+						<img src="{% static 'img/footer/bt4.gif' %}" class="fl">
+					</div>
+				</div>
+			</div>
+		</div>
+</body>
+
+</html>
